@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+* a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  width: 100%;
+  height: 6vmax;
+  padding: 0 5vmax;
+  background-color: #fefefe;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (orientation: portrait) {
+  .header {
+    height: 10vmax;
+  }
+}
+.header .logo {
+  width: 8vmax;
+  height: 4.5vmax;
+  background-image: url(../assets/icons/logos/reichenspurner-logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fefefe;
+}
+@media screen and (orientation: portrait) {
+  .header .logo {
+    height: 7vmax;
+    width: 12vmax;
+  }
+}
+.header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+@media screen and (orientation: portrait) {
+  .header .navigation {
+    position: absolute;
+    top: 10vmax;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 90vmax;
+    padding: 3vmax 0;
+    z-index: 10;
+    background-color: #fefefe;
+    display: none;
+  }
+}
+@media screen and (orientation: portrait) and (max-width: 550px) {
+  .header .navigation {
+    width: 100%;
+  }
+}
+.header .navigation .navigation-item {
+  margin: 0 2vmax;
+  font-size: 1.1vmax;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+  cursor: pointer;
+}
+@media screen and (orientation: portrait) {
+  .header .navigation .navigation-item {
+    font-size: 2.4vmax;
+    margin: 3vmax 0;
+    text-align: center;
+  }
+}
+.header .navigation .navigation-item::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -0.25vmax;
+  left: 0;
+  transition: 150ms ease-in;
+  background-color: #bd1414;
+}
+.header .navigation .navigation-item:hover::after {
+  transition: 150ms ease-in;
+  width: 100%;
+}
+.header .navigation .contact {
+  color: #bd1414;
+}
+.header .navigation .navigation-places-section {
+  position: relative;
+}
+@media screen and (orientation: portrait) {
+  .header .navigation .navigation-places-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header .navigation .navigation-places-section .navigation-places-btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.header .navigation .navigation-places-section .navigation-places-btn .navigation-places-btn-icon {
+  width: 1vmax;
+  height: 1vmax;
+  margin-left: 0.5vmax;
+  transform: rotate(90deg);
+  transition: 150ms ease-in-out;
+  background-image: url(../assets/icons/index-wrapper-1-btn1.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (orientation: portrait) {
+  .header .navigation .navigation-places-section .navigation-places-btn .navigation-places-btn-icon {
+    width: 1.5vmax;
+    height: 1.5vmax;
+  }
+}
+.header .navigation .navigation-places-section .places-btn-active .navigation-places-btn-icon {
+  transition: 150ms ease-in-out;
+  transform: rotate(270deg);
+}
+.header .navigation .navigation-places-section .navigation-places-list {
+  position: absolute;
+  list-style: none;
+  background-color: #bd1414;
+  width: 150%;
+  padding: 2vmax;
+  top: -3vmax;
+  transition: 150ms ease-in-out;
+  display: none;
+  transform: scaleY(0);
+}
+@media screen and (orientation: portrait) {
+  .header .navigation .navigation-places-section .navigation-places-list {
+    position: relative;
+    width: unset;
+  }
+}
+.header .navigation .navigation-places-section .navigation-places-list .navigation-places-item {
+  margin: 1.5vmax 0;
+  color: #fefefe;
+}
+@media screen and (orientation: portrait) {
+  .header .navigation .navigation-places-section .navigation-places-list .navigation-places-item {
+    margin: 2.5vmax 0;
+  }
+}
+.header .navigation .navigation-places-section .places-list-active {
+  transition: 150ms ease-in-out;
+  display: block;
+  transform: scaleY(1);
+  top: 3.8vmax;
+}
+@media screen and (orientation: portrait) {
+  .header .navigation .navigation-places-section .places-list-active {
+    top: unset;
+  }
+}
+.header .navigation-active {
+  display: flex;
+}
+.header .burger-menu {
+  width: 3vmax;
+  height: 2.5vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+@media screen and (orientation: portrait) {
+  .header .burger-menu {
+    display: flex;
+  }
+}
+.header .burger-menu .burger-line {
+  width: 100%;
+  height: 3.5px;
+  background-color: #bd1414;
+  transition: 150ms ease-in-out;
+}
+.header .burger-active {
+  justify-content: center;
+}
+.header .burger-active .burger-line:first-child {
+  display: none;
+  justify-content: center;
+}
+.header .burger-active .burger-line:nth-child(2) {
+  transform: rotate(45deg);
+  margin-bottom: -3.5px;
+}
+.header .burger-active .burger-line:nth-child(3) {
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=header.css.map */

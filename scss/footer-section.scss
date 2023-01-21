@@ -1,0 +1,114 @@
+$main-color: #bd1414;
+$black: #000;
+$gray: #ececec;
+$white: #fefefe;
+
+@mixin center-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  scroll-behavior: smooth;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.stay-in-touch-section {
+  width: 40%;
+  padding: 2vmax 0 5vmax 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  text-align: center;
+  @media screen and (orientation: portrait) {
+    width: 80%;
+  }
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    width: 90%;
+  }
+  .stay-in-touch-btn {
+    padding: 0.5vmax 1vmax;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2vmax;
+
+    background-color: $main-color;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.1vmax;
+    color: $white;
+    cursor: pointer;
+    @media screen and (orientation: portrait) {
+      font-size: 1.6vmax;
+      padding: 1vmax 2vmax;
+    }
+    &:hover {
+      .stay-in-touch-btn-icon {
+        margin-left: 1.5vmax;
+        transition: 150ms ease-in-out;
+      }
+    }
+    .stay-in-touch-btn-icon {
+      width: 1vmax;
+      height: 1vmax;
+
+      margin-left: 1vmax;
+
+      background-image: url(../assets/icons/index-wrapper-1-btn1.svg);
+      @include center-img;
+      filter: invert(100%) sepia(58%) saturate(264%) hue-rotate(225deg)
+        brightness(122%) contrast(99%);
+      @media screen and (orientation: portrait) {
+        width: 1.5vmax;
+        height: 1.5vmax;
+      }
+    }
+  }
+}
+.footer-section {
+  width: 100%;
+  padding: 0.5vmax 3vmax;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: $gray;
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  a {
+    margin: 0 1vmax;
+    color: $main-color;
+    font-size: 1vmax;
+    @media screen and (orientation: portrait) {
+      font-size: 1.4vmax;
+    }
+  }
+  .footer-section-text {
+    font-size: 1vmax;
+    @media screen and (orientation: portrait) {
+      font-size: 1.4vmax;
+    }
+  }
+  .footer-section-btn {
+    @media screen and (orientation: portrait) and (max-width: 550px) {
+      margin-bottom: 2vmax;
+    }
+  }
+}

@@ -1,0 +1,348 @@
+$main-color: #bd1414;
+$black: #000;
+$gray: #ececec;
+$white: #fefefe;
+
+@mixin center-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  scroll-behavior: smooth;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.section-title {
+  font-size: 2.4vmax;
+  font-weight: 500;
+  color: $main-color;
+  @media screen and (orientation: portrait) {
+    font-size: 3.5vmax;
+  }
+}
+
+.section-description {
+  font-size: 1.2vmax;
+  font-weight: 200;
+
+  margin-top: 1vmax;
+  @media screen and (orientation: portrait) {
+    font-size: 1.8vmax;
+  }
+}
+
+.wrapper-1 {
+  width: 100%;
+  height: 100vh;
+
+  @include center-img;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  @media screen and (orientation: portrait) {
+    justify-content: center;
+  }
+  .wrapper-1-content {
+    background-color: $white;
+    width: 40%;
+
+    margin-left: 8%;
+    margin-top: 12%;
+    padding: 3vmax;
+    @media screen and (orientation: portrait) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+    @media screen and (orientation: portrait) and (max-width: 550px) {
+      width: 90%;
+    }
+    .wrapper-1-title {
+      font-size: 2.6vmax;
+      font-weight: 500;
+      color: $main-color;
+      @media screen and (orientation: portrait) {
+        font-size: 4.2vmax;
+      }
+    }
+    .wrapper-1-description {
+      font-size: 1.1vmax;
+      font-weight: 300;
+
+      margin-top: 1vmax;
+      @media screen and (orientation: portrait) {
+        font-size: 1.8vmax;
+      }
+    }
+    .wrapper-1-btn {
+      border: none;
+      border-bottom: 2px solid $main-color;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3vmax;
+      padding: 0.25vmax 0;
+
+      font-size: 1.1vmax;
+
+      cursor: pointer;
+
+      color: $main-color;
+      background-color: $white;
+      @media screen and (orientation: portrait) {
+        font-size: 1.8vmax;
+      }
+      &:hover {
+        .wrapper-1-btn-icon {
+          margin-left: 1vmax;
+          transition: 150ms ease-in-out;
+        }
+      }
+      .wrapper-1-btn-icon {
+        width: 1vmax;
+        height: 1vmax;
+
+        margin-left: 0.5vmax;
+        @include center-img;
+        background-image: url(../assets/icons/index-wrapper-1-btn1.svg);
+        filter: invert(16%) sepia(93%) saturate(2734%) hue-rotate(352deg)
+          brightness(94%) contrast(96%);
+        @media screen and (orientation: portrait) {
+          width: 1.5vmax;
+          height: 1.5vmax;
+        }
+      }
+    }
+  }
+}
+.w1-tussling {
+  background-image: url(../assets/img/index-wrapper-6-img-1.jpg);
+}
+.w1-weiding {
+  background-image: url(../assets/img/index-wrapper-6-img-2.jpg);
+}
+.w1-garching {
+  background-image: url(../assets/img/garching-3.png);
+}
+.wrapper-2 {
+  width: 100%;
+  padding: 2vmax 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    flex-direction: column;
+  }
+  .wrapper-2-item {
+    width: 100%;
+    text-align: center;
+    padding: 2vmax;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .wrapper-2-item-number {
+      font-size: 2vmax;
+      font-weight: 500;
+      color: $main-color;
+      @media screen and (orientation: portrait) {
+        font-size: 2.6vmax;
+      }
+    }
+    .wrapper-2-item-description {
+      font-size: 1.2vmax;
+      font-weight: 300;
+
+      margin-top: 0.5vmax;
+      @media screen and (orientation: portrait) {
+        font-size: 1.5vmax;
+      }
+    }
+  }
+  .wrapper-2-spacer {
+    width: 1vmax;
+    height: 6vmax;
+    background-color: $gray;
+    @media screen and (orientation: portrait) and (max-width: 550px) {
+      display: none;
+    }
+  }
+}
+
+.wrapper-3 {
+  width: 100%;
+  padding: 6vmax 0;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+    padding: 6vmax 10%;
+  }
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    padding: 6vmax 5%;
+  }
+  .wrapper-3-img {
+    width: 40vmax;
+    height: 35vmax;
+
+    @include center-img;
+    @media screen and (orientation: portrait) {
+      width: 100%;
+    }
+  }
+  .wrapper-3-content {
+    width: 40vmax;
+    padding: 3vmax 5vmax;
+    background-color: $main-color;
+    margin-left: -3vmax;
+    @media screen and (orientation: portrait) {
+      margin: auto;
+      width: 100%;
+    }
+    .section-title {
+      color: $white;
+    }
+    .section-description {
+      color: $white;
+    }
+  }
+}
+.wrapper-4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6vmax 0;
+  @media screen and (orientation: portrait) {
+    padding: 6vmax 10%;
+    flex-direction: column;
+  }
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    padding: 6vmax 5%;
+  }
+  .wrapper-4-content {
+    width: 40vmax;
+    padding: 3vmax;
+    @media screen and (orientation: portrait) {
+      width: 100%;
+      padding: unset;
+    }
+  }
+  .wrapper-4-container {
+    width: 37vmax;
+    @media screen and (orientation: portrait) {
+      width: 100%;
+      margin-top: 2vmax;
+    }
+    .wrapper-4-container-item {
+      display: flex;
+      align-items: center;
+      background-color: $gray;
+      padding: 1vmax;
+      margin: 1.25vmax 0;
+      .wrapper-4-item-icon {
+        width: 3vmax;
+        height: 3vmax;
+        filter: invert(68%) sepia(86%) saturate(5005%) hue-rotate(123deg)
+          brightness(93%) contrast(89%);
+        @media screen and (orientation: portrait) {
+          width: 4vmax;
+          height: 4vmax;
+        }
+      }
+      .wrapper-4-item-descritpion {
+        font-size: 1.2vmax;
+        font-weight: 200;
+
+        padding: 1vmax;
+        @media screen and (orientation: portrait) {
+          font-size: 1.8vmax;
+          padding: 2vmax;
+        }
+      }
+    }
+  }
+}
+.wrapper-5 {
+  width: 75%;
+  margin: auto;
+  padding: 6vmax 0;
+
+  display: grid;
+  gap: 1vmax;
+  grid-template-areas:
+    'img1 img2 text'
+    'img3 img4 text'
+    'img5 img5 img6';
+  grid-template-columns: 30% 30% 1fr;
+  @media screen and (orientation: portrait) {
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'text text'
+      'img1 img2'
+      'img3 img4'
+      'img5 img6';
+  }
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    width: 90%;
+  }
+
+  .wrapper-5-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: text;
+    padding: 2vmax;
+    @media screen and (orientation: portrait) {
+      padding: 3vmax 0;
+    }
+  }
+  .wrapper-5-img {
+    width: 100%;
+    height: 15vmax;
+    @include center-img;
+
+    background-color: grey;
+    @media screen and (orientation: portrait) {
+      height: 20vmax;
+    }
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .img4 {
+    grid-area: img4;
+  }
+  .img5 {
+    grid-area: img5;
+  }
+  .img6 {
+    grid-area: img6;
+  }
+}

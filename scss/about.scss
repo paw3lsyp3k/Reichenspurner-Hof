@@ -1,0 +1,297 @@
+$main-color: #bd1414;
+$black: #000;
+$gray: #ececec;
+$white: #fefefe;
+
+@mixin center-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  scroll-behavior: smooth;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.section-title {
+  font-size: 2.4vmax;
+  font-weight: 500;
+  color: $main-color;
+  @media screen and (orientation: portrait) {
+    font-size: 3.5vmax;
+  }
+}
+
+.section-description {
+  font-size: 1.2vmax;
+  font-weight: 200;
+
+  margin-top: 1vmax;
+  @media screen and (orientation: portrait) {
+    font-size: 1.8vmax;
+  }
+}
+
+.wrapper-1 {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(../assets/img/weiding-2.jpg);
+  @media screen and (orientation: portrait) {
+    justify-content: center;
+  }
+  .wrapper-1-content {
+    background-color: $white;
+    width: 40%;
+
+    margin-left: 8%;
+    margin-top: 12%;
+    padding: 3vmax;
+    @media screen and (orientation: portrait) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+    @media screen and (orientation: portrait) and (max-width: 550px) {
+      width: 90%;
+    }
+    .wrapper-1-title {
+      font-size: 2.6vmax;
+      font-weight: 500;
+      color: $main-color;
+      @media screen and (orientation: portrait) {
+        font-size: 4.2vmax;
+      }
+    }
+    .wrapper-1-description {
+      font-size: 1.1vmax;
+      font-weight: 300;
+
+      margin-top: 1vmax;
+      @media screen and (orientation: portrait) {
+        font-size: 1.8vmax;
+      }
+    }
+    .wrapper-1-btn {
+      border: none;
+      border-bottom: 2px solid $main-color;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3vmax;
+      padding: 0.25vmax 0;
+
+      font-size: 1.1vmax;
+
+      cursor: pointer;
+
+      color: $main-color;
+      background-color: $white;
+      @media screen and (orientation: portrait) {
+        font-size: 1.8vmax;
+      }
+      &:hover {
+        .wrapper-1-btn-icon {
+          margin-left: 1vmax;
+          transition: 150ms ease-in-out;
+        }
+      }
+      .wrapper-1-btn-icon {
+        width: 1vmax;
+        height: 1vmax;
+
+        margin-left: 0.5vmax;
+        @include center-img;
+        background-image: url(../assets/icons/index-wrapper-1-btn1.svg);
+        filter: invert(16%) sepia(93%) saturate(2734%) hue-rotate(352deg)
+          brightness(94%) contrast(96%);
+        @media screen and (orientation: portrait) {
+          width: 1.5vmax;
+          height: 1.5vmax;
+        }
+      }
+    }
+  }
+}
+.wrapper-2 {
+  width: 100%;
+  padding: 8vmax 10%;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+  }
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    padding: 8vmax 5%;
+  }
+  .wrapper-2-title {
+    width: 15%;
+    font-size: 1.4vmax;
+    font-weight: 300;
+    color: $main-color;
+    @media screen and (orientation: portrait) {
+      width: 100%;
+      font-size: 3.5vmax;
+    }
+  }
+  .wrapper-2-description {
+    width: 85%;
+    font-size: 1.4vmax;
+    font-weight: 200;
+    @media screen and (orientation: portrait) {
+      width: 100%;
+      font-size: 1.8vmax;
+      margin-top: 2vmax;
+    }
+  }
+}
+.wrapper-3 {
+  width: 100%;
+  padding: 6vmax 10%;
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    padding: 6vmax 5%;
+  }
+  .wrapper-3-container {
+    width: 100%;
+    margin-top: 4vmax;
+    display: flex;
+    .wrapper-3-items {
+      display: flex;
+      flex-direction: column;
+      .wrapper-3-item {
+        width: 100%;
+        margin: 2vmax 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (orientation: portrait) {
+          flex-direction: column;
+        }
+        .wrapper-3-img {
+          width: 25vmax;
+          height: 25vmax;
+          background-color: $gray;
+          @media screen and (orientation: portrait) {
+            width: 100%;
+          }
+        }
+        .wrapper-3-content {
+          width: 50%;
+          @media screen and (orientation: portrait) {
+            width: 100%;
+          }
+          .wrapper-3-title {
+            font-size: 2vmax;
+            font-weight: 500;
+
+            color: $main-color;
+            @media screen and (orientation: portrait) {
+              font-size: 3.5vmax;
+              margin-top: 2vmax;
+            }
+          }
+          .wrapper-3-description {
+            font-size: 1.1vmax;
+            font-weight: 200;
+
+            margin-top: 2vmax;
+            @media screen and (orientation: portrait) {
+              font-size: 1.8vmax;
+            }
+          }
+        }
+        .wrapper-3-point {
+          width: 3vmax;
+          height: 3vmax;
+
+          margin-right: -1.7vmax;
+          z-index: 1;
+
+          border-radius: 50%;
+          background-color: $white;
+          border: 3px solid $main-color;
+          @media screen and (orientation: portrait) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .wrapper-3-bar {
+    width: 1vmax;
+    background-color: $main-color;
+    @media screen and (orientation: portrait) {
+      display: none;
+    }
+  }
+}
+.wrapper-4 {
+  width: 100%;
+  padding: 6vmax 10%;
+  @media screen and (orientation: portrait) and (max-width: 550px) {
+    padding: 6vmax 5%;
+  }
+  .wrapper-4-container {
+    margin-top: 4vmax;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vmax;
+    @media screen and (orientation: portrait) {
+      grid-template-columns: 1fr;
+      row-gap: 5vmax;
+    }
+    .wrapper-4-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .wrapper-4-item-img {
+        width: 13vmax;
+        height: 15vmax;
+        background-color: darkgreen;
+        @media screen and (orientation: portrait) {
+          width: 17vmax;
+          height: 20vmax;
+        }
+        @media screen and (orientation: portrait) and (max-width: 550px) {
+          width: 13vmax;
+          height: 15vmax;
+        }
+      }
+      .wrapper-4-item-content {
+        width: 60%;
+        .wrapper-4-item-title {
+          font-size: 1.8vmax;
+          font-weight: 500;
+          @media screen and (orientation: portrait) {
+            font-size: 2.5vmax;
+          }
+        }
+        .wrapper-4-item-description {
+          font-size: 1.2vmax;
+          font-weight: 200;
+          @media screen and (orientation: portrait) {
+            width: 100%;
+            font-size: 1.8vmax;
+          }
+        }
+      }
+    }
+  }
+}
