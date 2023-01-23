@@ -12,7 +12,7 @@
 
 .section-title {
   font-size: 2.4vmax;
-  font-weight: 500;
+  font-weight: 600;
   color: #bd1414;
 }
 @media screen and (orientation: portrait) {
@@ -23,7 +23,7 @@
 
 .section-description {
   font-size: 1.2vmax;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 1vmax;
 }
 @media screen and (orientation: portrait) {
@@ -68,7 +68,7 @@
 }
 .wrapper-1 .wrapper-1-content .wrapper-1-title {
   font-size: 2.6vmax;
-  font-weight: 500;
+  font-weight: 600;
   color: #bd1414;
 }
 @media screen and (orientation: portrait) {
@@ -296,7 +296,7 @@
 }
 .wrapper-4 .wrapper-4-container .wrapper-4-container-item .wrapper-4-item-descritpion {
   font-size: 1.2vmax;
-  font-weight: 200;
+  font-weight: 300;
   padding: 1vmax;
 }
 @media screen and (orientation: portrait) {

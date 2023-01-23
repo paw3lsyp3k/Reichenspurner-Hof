@@ -24,7 +24,7 @@ $white: #fefefe;
 
 .section-title {
   font-size: 2.4vmax;
-  font-weight: 500;
+  font-weight: 600;
   color: $main-color;
   @media screen and (orientation: portrait) {
     font-size: 3.5vmax;
@@ -33,7 +33,7 @@ $white: #fefefe;
 
 .section-description {
   font-size: 1.2vmax;
-  font-weight: 200;
+  font-weight: 300;
 
   margin-top: 1vmax;
   @media screen and (orientation: portrait) {
@@ -70,7 +70,7 @@ $white: #fefefe;
     }
     .wrapper-1-title {
       font-size: 2.6vmax;
-      font-weight: 500;
+      font-weight: 600;
       color: $main-color;
       @media screen and (orientation: portrait) {
         font-size: 4.2vmax;
@@ -269,7 +269,7 @@ $white: #fefefe;
       }
       .wrapper-4-item-descritpion {
         font-size: 1.2vmax;
-        font-weight: 200;
+        font-weight: 300;
 
         padding: 1vmax;
         @media screen and (orientation: portrait) {
