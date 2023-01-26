@@ -12,7 +12,7 @@
 
 .section-title {
   font-weight: 600;
-  font-size: 2.4vmax;
+  font-size: 2.2vmax;
   color: #bd1414;
   margin-bottom: 1vmax;
 }
@@ -24,7 +24,7 @@
 
 .section-description {
   font-weight: 300;
-  font-size: 1.2vmax;
+  font-size: 1.1vmax;
 }
 @media screen and (orientation: portrait) {
   .section-description {
@@ -477,7 +477,7 @@
   }
 }
 .wrapper-6 .wrapper-6-container .wrapper-6-item .wrapper-6-item-content .wrapper-6-item-title {
-  font-size: 2vmax;
+  font-size: 1.8vmax;
   font-weight: 500;
 }
 @media screen and (orientation: portrait) {
@@ -486,7 +486,7 @@
   }
 }
 .wrapper-6 .wrapper-6-container .wrapper-6-item .wrapper-6-item-content .wrapper-6-item-description {
-  font-size: 1.2vmax;
+  font-size: 1.1vmax;
   font-weight: 300;
   margin-top: 0.5vmax;
 }

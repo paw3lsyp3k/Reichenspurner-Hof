@@ -11,7 +11,7 @@
 }
 
 .section-title {
-  font-size: 2.4vmax;
+  font-size: 2.2vmax;
   font-weight: 600;
   color: #bd1414;
 }
@@ -22,7 +22,7 @@
 }
 
 .section-description {
-  font-size: 1.2vmax;
+  font-size: 1.1vmax;
   font-weight: 300;
   margin-top: 1vmax;
 }
@@ -306,7 +306,7 @@
   width: 60%;
 }
 .wrapper-4 .wrapper-4-container .wrapper-4-item .wrapper-4-item-content .wrapper-4-item-title {
-  font-size: 1.8vmax;
+  font-size: 1.7vmax;
   font-weight: 500;
 }
 @media screen and (orientation: portrait) {
@@ -315,7 +315,7 @@
   }
 }
 .wrapper-4 .wrapper-4-container .wrapper-4-item .wrapper-4-item-content .wrapper-4-item-description {
-  font-size: 1.2vmax;
+  font-size: 1.1vmax;
   font-weight: 300;
   margin-top: 0.5vmax;
 }
